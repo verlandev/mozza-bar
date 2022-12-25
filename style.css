@@ -1,0 +1,882 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat';
+    font-size: 16px;
+}
+
+header{
+    background-color: #1f1f1f;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;    
+}
+
+header img{
+    width: 170px;    
+}
+
+header nav{
+    width: 65%;
+    padding-top: 30px;
+    margin-left: 100px;
+}
+
+
+header nav ul{
+    display: flex; 
+    margin-top: 20px;
+    justify-content: flex-end;  
+}
+
+header nav ul li{
+    list-style: none;
+    padding: 20px;
+    text-decoration: none;
+    
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 18px;
+    transition: 0.3s;
+    text-underline-position: under;
+}
+
+header nav ul li a:hover{
+    text-decoration: underline #bb8336 2px;
+    transition: 0.3s;
+}
+
+.hero{
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    background-image: url("imagen-fondo-hero.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+.hero::before{
+    width: 100%;
+    height: 100vh; 
+    position: absolute;
+    content: "";
+    background-color: rgba(0,0,0,0.7);
+    
+}
+
+
+.hero .title{
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 60px;
+}
+
+.hero .title h1, p{
+    color:white;
+    
+    
+}
+
+.hero .title h1{
+    font-size: 50px;
+    font-family: "Merriweather";
+    letter-spacing: 5px;
+}
+
+.hero .title p{
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.hero .title h2{
+    color:#bb8336;
+    font-family: "Great Vibes", cursive;
+    letter-spacing: 5px;
+    font-size: 50px;
+}
+
+.hero .title hr{
+    margin: 0 auto;
+    width: 60%;
+    border:solid 2px #bb8336;
+}
+
+/*SE TERMINA LA SECCIÓN HERO*/
+
+.concepto{
+    background-image: url("fondo-concepto.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.food-images{
+    display: flex;
+    flex-direction: row;     
+}
+
+.food-images img{
+    width: 250px;
+    height:auto ;
+    display:flex;
+    position: absolute;
+
+}
+
+.food-images .img-1{
+    width: 10%;
+    margin-left: 25%;
+    margin-top: -30px;
+}
+
+.food-images .img-2{
+    width: 10%;
+    margin-left: 25%;
+    margin-top: -60px;
+}
+
+.concepto-container{
+    width: 35%;
+    margin: 0 auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #1f1f1f;  
+}
+
+.concepto-container h3{
+    padding-bottom: 5%;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;    
+}
+
+
+.concepto-container p{
+    padding-bottom: 30px;
+    color: whitesmoke;
+    text-align: justify;
+    line-height: 140%;
+    padding-left: 10%;
+    padding-right: 10% ;
+}
+
+/* AQUÍ TERMINA LA SECCIÓN CONCEPTO */
+
+/* Sección gallery */
+
+.gallery{
+    width: 100%;
+    height: 110vh;
+    background-image:url("angela-bailey-tuJtzghMuEw-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+ .gallery::before{
+    width: 100%;
+    height: 100vh; 
+    padding-bottom: 90px;
+    position: absolute;
+    content: '';
+    background-color: rgba(0,0,0,0.6);
+
+}
+
+.columns{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:stretch;
+}
+
+
+.gallery #first-column img{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.gallery #second-column img{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-right: 15px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.gallery #third-column img{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+
+/* Sección carta */
+
+.breakfast{
+    padding-top: 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.breakfast h3{
+    color:#1f1f1f;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.breakfast ul {
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+.breakfast ul li{
+    display: inline-block;
+    width: 10%;
+    text-align: center;
+}
+
+.breakfast ul li a{
+    text-decoration: none;
+    color: #1f1f1f;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-underline-position: under;
+}
+
+.breakfast ul li a:hover{
+    text-decoration: underline #bb8336 2px;
+    border-bottom: 2px;
+    transition: 0.3s;
+}
+
+.breakfast-container{
+    width: 50%;
+    margin-top: 60px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding:2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url('/fondo-concepto.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.breakfast-column-1{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 30px;
+    background-color: #fff;
+}
+
+.breakfast-column-2{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 30px;
+    background-color: #fff;
+}
+
+.type-breakfast{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.type-breakfast h5{
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    padding-top: 30px;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+
+.type-breakfast p{
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 140%;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    font-size: 14px;
+}
+
+#dishes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+.breakfast .button{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.breakfast .button button{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 15px;
+    background-color: #bb8336;
+    border-color: #bb8336;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.breakfast .button button:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color: #bb8336;
+    transition: 0.3s;
+}
+
+
+
+
+/* Reservation */
+
+.reservation{
+    width: 100%;
+    height: 60vh;
+    background-image: url('reservation-hero.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.reservation::before{
+    width: 100%;
+    height: 60vh;
+    position: absolute;
+    content: "";
+    background-color: rgba(0,0,0,0.8);
+}
+
+.reservation h3{
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    position: relative;
+    padding-top: 50px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.application-form{
+    position: relative;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.people-time{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.application-form h3{
+    color: #fff;
+    padding-top: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+
+.reservation form label{
+    position: relative;
+    color: aliceblue;
+    display: block;
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    
+}
+
+.reservation #people{
+    width: 300px;
+    margin-right: 20px;
+}
+
+.reservation #time{
+    width: 200px;
+}
+
+.reservation #people, #time{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.reservation #table{
+    padding: 10px;
+}
+
+.people-time{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+
+.submission{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.submission #submit{
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Montserrat';
+}
+
+.submission #submit:hover{
+    color: #fff;
+    background-color: #bb8336;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form{
+    margin: 0 auto;
+}
+
+.waiting-list{
+    width: 100%;
+
+}
+
+.waiting-list {
+    font-size: 12px;
+}
+
+
+.waiting-list #waiting, #waiting-group{
+    width: 35%;
+    margin-top: 5px;
+    padding: 5px;
+    display: inline-block;
+    margin-left: 70px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    transition: 0.3s;
+
+}
+
+.waiting-list #waiting:hover, #waiting-group:hover{
+    cursor: pointer;
+    background-color: #bb8336;
+    color: #fff;
+    transition: 0.3s;
+}
+    
+
+
+
+
+.direction {
+    position: relative;
+    color: #fff;
+    width: 40%;
+}
+
+.direction h2{
+    text-transform: uppercase;
+    color: #bb8336;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.direction h3{
+    text-transform: uppercase;
+    text-align: left;
+    padding-top: 0;
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+}
+
+.direction hr{
+    width: 20%;
+}
+
+.direction p{
+    padding-top: 20px;
+    line-height: 25px;
+}
+
+/* Sección Blog */
+
+.blog{
+    width: 100%;
+    height: 80vh;
+    color: #fff;
+}
+
+.blog h3{
+    text-align: center;
+    color: #000;
+    padding-top: 50px;
+    letter-spacing: 2px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.blog-containers{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.first-container-blog,
+.second-container-blog,
+.third-container-blog{
+    width: 27%;
+    height: 50vh;
+}
+
+.container-mozzabar{
+    border: solid 1px grey;
+    width: 25%;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    position: relative;
+}
+
+.inside-text-container-1,
+.inside-text-container-2,
+.inside-text-container-3{
+    text-align: left;
+    margin: 80px;
+    position: relative;
+    line-height: 30px;
+}
+
+.inside-text-container-1 h2,
+.inside-text-container-2 h2,
+.inside-text-container-3 h2{
+    padding-top: 5px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.inside-text-container-1 p,
+.inside-text-container-3 p,
+.inside-text-container-2 p{
+    font-size: 13px;
+    line-height: 20px;
+    color: azure;
+}
+
+.first-container-blog{
+    background-image: url('/brunch.jpg');
+    background-position: center;
+    background-size: cover;
+
+}
+
+.second-container-blog{
+    background-image: url('/fresas.jpg');
+    background-position: center;
+    background-size: cover;
+
+}
+
+.third-container-blog{
+    background-image: url('/pizarra.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.first-container-blog::before,
+.second-container-blog::before,
+.third-container-blog::before{
+    width: 19%;
+    height: 50vh;
+    content: '';
+    position: absolute;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.blog button{
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+    width: 15%;
+    padding: 10px;
+    text-transform: uppercase;
+    background-color: #bb8336;
+    color: #fff;
+    border: #bb8336;
+    letter-spacing: 2px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.blog button:hover{
+    background-color: #fff;
+    color: #bb8336;
+    transition: 0.3s;
+    border: 1px solid #bb8336;
+    cursor: pointer;
+    
+}
+
+
+
+
+
+
+/* Sección invitación */
+
+
+.invitation{
+    width: 100%;
+    position: relative;
+    height: 70vh;
+    background-image: url("oreo-cake.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.invitation::before{
+    width: 100%;
+    height: 70vh; 
+    position: absolute;
+    content: "";
+    background-color: rgba(0,0,0,0.8);
+    
+}
+
+
+.invitation .title{
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 60px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.invitation .title h1{
+    color:white;
+    font-size: 50px;
+    font-family: "Merriweather";
+    letter-spacing: 2px;
+}
+
+.invitation .title hr{
+    margin: 0 auto;
+    width: 60%;
+    border:solid 2px #bb8336;
+}
+
+.invitation .title h2{
+    position: relative;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+
+
+.icons-container{
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+}
+
+.icons p{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+.icon-1, .icon-2, .icon-3{
+    padding: 0 10% 0% 10% ;
+    position: relative;
+    position: relative;
+    text-align: center;
+
+
+}
+
+.icon-1 p, .icon-2 p, .icon-3 p{
+    color: whitesmoke;
+    text-align: center;
+    width: 100%;
+    padding-top: 5px;
+    letter-spacing: 1px;
+    
+
+
+}
+
+span img{
+    width: 50px;
+    padding-bottom: 10px;
+}
+
+/* Sección síguenos */
+
+.follow-us{
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #fff;
+    height: 30vh;
+}
+
+.follow-us h3{
+    margin-top: 90px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+}
+
+.button-fb-ig{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.button-fb-ig button{
+    width: 30%;
+    padding: 10px;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    letter-spacing: 2px;
+    border: solid 2px grey;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.button-fb-ig button:hover{
+    background-color: #000;
+    color: #fff;
+    transition: 0.3s;
+    border: solid 2px white;
+
+}
+
+/* Footer */
+
+footer{
+    width: 100%;
+    height: 30vh;
+    background-color: #ededed;
+}
+
+.footer-container{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding-top: 50px;
+
+}
+
+.footer-container h4{
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.footer-container p{
+    color: #000;
+    line-height: 140%;
+}
+
+footer .column-1{
+    display: flex;
+    flex-direction: column;
+    color: #000;
+}
+
+footer .column-1 a{
+    text-decoration: none;
+    color: #000;
+    width: 90px;
+    padding-bottom: 10px;
+}
+
+
+
+
+
